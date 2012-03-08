@@ -40,6 +40,8 @@ public class DateSlider extends Dialog {
 
 //	private static String TAG = "DATESLIDER";
 
+	public static String NS = "http://schemas.android.com/apk/res-auto/com.googlecode.android.widgets.DateSlider";
+
     protected OnDateSetListener onDateSetListener;
     protected Calendar mInitialTime, minTime, maxTime;
     protected int mLayoutID;

@@ -114,12 +114,12 @@ public class ScrollLayout extends LinearLayout {
                 0, 0);
 
         // Get the labeler class and construct an instance
-        String className = a.getNonResourceString(R.styleable.ScrollLayout_labelerClass);
+        String className = attrs.getAttributeValue(DateSlider.NS, getResources().getResourceEntryName(R.attr.labelerClass));
         if (className == null) {
             throw new RuntimeException("Must specify labeler class at " + a.getPositionDescription());
         }
 
-        String labelerFormat = a.getString(R.styleable.ScrollLayout_labelerFormat);
+        String labelerFormat = attrs.getAttributeValue(DateSlider.NS, getResources().getResourceEntryName(R.attr.labelerFormat));
         if (labelerFormat == null) {
             throw new RuntimeException("Must specify labelerFormat at " + a.getPositionDescription());
         }
